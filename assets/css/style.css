@@ -1082,6 +1082,27 @@ section {
     box-shadow: 0 4px 12px var(--accent-glow);
 }
 
+/* Official Brand Icon Colors */
+.brand-html { color: #E34F26; }
+.brand-css { color: #1572B6; }
+.brand-js { color: #F7DF1E; }
+.brand-ts { color: #3178C6; }
+.brand-react { color: #61DAFB; }
+.brand-next { color: var(--text-primary); }
+.brand-tailwind { color: #06B6D4; }
+.brand-node { color: #339933; }
+.brand-express { color: var(--text-secondary); }
+.brand-java { color: #ED8B00; }
+.brand-spring { color: #6DB33F; }
+.brand-python { color: #3776AB; }
+.brand-flutter { color: #02569B; }
+.brand-mongodb { color: #47A248; }
+.brand-mysql { color: #00758F; }
+.brand-git { color: #F05032; }
+.brand-github { color: var(--text-primary); }
+.brand-docker { color: #2496ED; }
+.brand-vscode { color: #007ACC; }
+
 .skills-subcategory-title {
     font-size: 0.8rem;
     font-weight: 700;
