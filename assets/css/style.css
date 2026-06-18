@@ -794,6 +794,7 @@ section {
     font-size: 0.9rem;
     line-height: 1.7;
     color: var(--text-primary);
+    overflow-x: auto;
 }
 
 .font-mono {
@@ -899,7 +900,7 @@ section {
 
 .about-bullets li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     color: var(--text-secondary);
     font-weight: 500;
@@ -907,6 +908,7 @@ section {
 
 .about-bullets li i {
     font-size: 0.95rem;
+    margin-top: 5px;
 }
 
 .text-purple { color: var(--accent-primary); }
@@ -1156,7 +1158,7 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
@@ -2156,7 +2158,7 @@ section {
 
 @media (max-width: 968px) {
     .hero-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 50px;
         text-align: center;
     }
@@ -2284,15 +2286,19 @@ section {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     
     .hero-subtitle {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
     
     .hero-buttons .btn {
         width: 100%;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
     
     .statistics-grid {
